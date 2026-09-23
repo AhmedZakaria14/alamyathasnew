@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Applebot
+User-agent: Applebot
+Allow: /
+
+# YandexBot
+User-agent: YandexBot
+Allow: /
+
+# AI search indexers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://alamyasas.vercel.app/sitemap.xml
+Host: https://alamyasas.vercel.app

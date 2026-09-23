@@ -1,0 +1,6 @@
+{
+  "name": "العالمي لنقل الأثاث",
+  "description": "العالمي لنقل الأثاث: خدمات نقل وتغليف وفك وتركيب منظمة في القاهرة والجيزة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

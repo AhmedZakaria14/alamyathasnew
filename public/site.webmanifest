@@ -1,0 +1,31 @@
+{
+  "name": "شركة العالمي لنقل وتغليف الأثاث والعفش",
+  "short_name": "العالمي للنقل",
+  "description": "أفضل شركة نقل أثاث ونقل عفش في القاهرة والجيزة بأحدث أوناش الرفع الهيدروليكية وسيارات النقل المغلقة وتغليف الموبيليا بأرخص الأسعار.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#123b63",
+  "theme_color": "#123b63",
+  "lang": "ar-EG",
+  "dir": "rtl",
+  "orientation": "portrait",
+  "categories": [
+    "business",
+    "logistics",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/assets/delivery-team-checking-manifest.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/delivery-team-checking-manifest.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

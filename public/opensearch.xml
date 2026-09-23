@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>العالمي لنقل الأثاث</ShortName>
+    <Description>البحث في خدمات ومناطق نقل وتغليف الأثاث والعفش بالقاهرة والجيزة</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <Image width="16" height="16" type="image/x-icon">https://alamyasas.vercel.app/favicon.ico</Image>
+    <Url type="text/html" method="get" template="https://alamyasas.vercel.app/areas.html?q={searchTerms}"/>
+</OpenSearchDescription>

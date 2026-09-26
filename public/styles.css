@@ -793,3 +793,10 @@ html[dir="rtl"] .scroll-progress-bar {
 }
 
 
+
+/* Keep the directory CTA readable despite older menu/link colour overrides. */
+.site-header .areas-all,.site-header .areas-all:visited,.site-header .areas-all:hover,.site-header .areas-all:focus-visible{background:#123b63;color:#fff!important;border:0;border-radius:8px;padding:12px 18px!important;line-height:1.7;gap:12px;align-items:center;text-align:center;white-space:normal}
+.site-header .areas-all span{color:inherit!important}
+.site-header .areas-all:hover{background:#1c537f}
+.site-header .areas-all:focus-visible{outline:3px solid #45a8e2;outline-offset:3px}
+.mobile-areas>.areas-all{display:flex!important;justify-content:center;margin-top:14px}

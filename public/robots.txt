@@ -33,5 +33,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://alamyasas.vercel.app/sitemap.xml
-Host: https://alamyasas.vercel.app
+Sitemap: https://www.alamytrans.com/sitemap.xml
+Host: https://www.alamytrans.com

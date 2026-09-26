@@ -444,7 +444,7 @@ ARTICLES = [
 
 def generate_article_page(art):
     slug = art['slug']
-    canonical_url = f"https://alamyasas.vercel.app/{slug}"
+    canonical_url = f"https://www.alamytrans.com/{slug}"
     
     # 1. Custom Head
     head_content = f'''<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#123b63"><meta name="description" content="{art['meta_desc']}">
@@ -455,22 +455,22 @@ def generate_article_page(art):
 <meta name="DC.creator" content="شركة العالمي لنقل وتغليف الأثاث">
 <meta name="DC.coverage" content="{art['geo_placename']}">
 <meta name="DC.language" content="ar">
-<link rel="manifest" href="site.webmanifest"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><title>{art['meta_title']}</title><link rel="canonical" href="{canonical_url}"><meta property="og:locale" content="ar_EG"><meta property="og:type" content="article"><meta property="og:site_name" content="العالمي لنقل الأثاث"><meta property="og:title" content="{art['meta_title']}"><meta property="og:description" content="{art['meta_desc']}"><meta property="og:url" content="{canonical_url}"><meta property="og:image" content="https://alamyasas.vercel.app/{art['hero_img']}"><meta property="og:image:alt" content="{art['title']}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{art['meta_title']}"><meta name="twitter:description" content="{art['meta_desc']}"><meta name="twitter:image" content="https://alamyasas.vercel.app/{art['hero_img']}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="favicon.png"><link rel="shortcut icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles.css"><script type="application/ld+json">
+<link rel="manifest" href="site.webmanifest"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><title>{art['meta_title']}</title><link rel="canonical" href="{canonical_url}"><meta property="og:locale" content="ar_EG"><meta property="og:type" content="article"><meta property="og:site_name" content="العالمي لنقل الأثاث"><meta property="og:title" content="{art['meta_title']}"><meta property="og:description" content="{art['meta_desc']}"><meta property="og:url" content="{canonical_url}"><meta property="og:image" content="https://www.alamytrans.com/{art['hero_img']}"><meta property="og:image:alt" content="{art['title']}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{art['meta_title']}"><meta name="twitter:description" content="{art['meta_desc']}"><meta name="twitter:image" content="https://www.alamytrans.com/{art['hero_img']}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="favicon.png"><link rel="shortcut icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles.css"><script type="application/ld+json">
 {{
   "@context": "https://schema.org",
   "@graph": [
     {{
       "@type": "WebSite",
-      "@id": "https://alamyasas.vercel.app/#website",
-      "url": "https://alamyasas.vercel.app",
+      "@id": "https://www.alamytrans.com/#website",
+      "url": "https://www.alamytrans.com",
       "name": "شركة العالمي لنقل وتغليف الأثاث والعفش",
       "inLanguage": "ar-EG"
     }},
     {{
       "@type": "MovingCompany",
-      "@id": "https://alamyasas.vercel.app/#business",
+      "@id": "https://www.alamytrans.com/#business",
       "name": "شركة العالمي لنقل وتغليف الأثاث",
-      "url": "https://alamyasas.vercel.app",
+      "url": "https://www.alamytrans.com",
       "telephone": "+20 10 33188096",
       "email": "thmanjmalmar94@gmail.com",
       "address": {{
@@ -494,19 +494,19 @@ def generate_article_page(art):
       "author": {{
         "@type": "Organization",
         "name": "فريق خبراء شركة العالمي لنقل الأثاث",
-        "url": "https://alamyasas.vercel.app"
+        "url": "https://www.alamytrans.com"
       }},
       "publisher": {{
-        "@id": "https://alamyasas.vercel.app/#business"
+        "@id": "https://www.alamytrans.com/#business"
       }},
-      "image": "https://alamyasas.vercel.app/{art['hero_img']}",
+      "image": "https://www.alamytrans.com/{art['hero_img']}",
       "articleSection": "{art['category']}"
     }},
     {{
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://alamyasas.vercel.app/"}},
-        {{"@type": "ListItem", "position": 2, "name": "المدونة", "item": "https://alamyasas.vercel.app/blog.html"}},
+        {{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://www.alamytrans.com/"}},
+        {{"@type": "ListItem", "position": 2, "name": "المدونة", "item": "https://www.alamytrans.com/blog.html"}},
         {{"@type": "ListItem", "position": 3, "name": "{art['title']}", "item": "{canonical_url}"}}
       ]
     }}

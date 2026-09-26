@@ -198,16 +198,16 @@ def build_schema_json(is_core, page_url, title, desc, area_name, gov_name, lat, 
     graph = [
         {
             "@type": "WebSite",
-            "@id": "https://alamyasas.vercel.app/#website",
-            "url": "https://alamyasas.vercel.app",
+            "@id": "https://www.alamytrans.com/#website",
+            "url": "https://www.alamytrans.com",
             "name": "شركة العالمي لنقل وتغليف الأثاث والعفش",
             "inLanguage": "ar-EG"
         },
         {
             "@type": "MovingCompany",
-            "@id": "https://alamyasas.vercel.app/#business",
+            "@id": "https://www.alamytrans.com/#business",
             "name": "شركة العالمي لنقل وتغليف الأثاث",
-            "url": "https://alamyasas.vercel.app",
+            "url": "https://www.alamytrans.com",
             "telephone": "+20 10 33188096",
             "email": "thmanjmalmar94@gmail.com",
             "address": {
@@ -258,7 +258,7 @@ def build_schema_json(is_core, page_url, title, desc, area_name, gov_name, lat, 
             "@type": "Service",
             "name": f"خدمة نقل الأثاث والعفش في {area_name}",
             "serviceType": "نقل وتغليف الأثاث والعفش",
-            "provider": {"@id": "https://alamyasas.vercel.app/#business"},
+            "provider": {"@id": "https://www.alamytrans.com/#business"},
             "areaServed": {
                 "@type": "AdministrativeArea",
                 "name": area_name,
@@ -275,15 +275,15 @@ def build_schema_json(is_core, page_url, title, desc, area_name, gov_name, lat, 
         "name": title,
         "description": desc,
         "inLanguage": "ar-EG",
-        "isPartOf": {"@type": "WebSite", "@id": "https://alamyasas.vercel.app/#website"}
+        "isPartOf": {"@type": "WebSite", "@id": "https://www.alamytrans.com/#website"}
     }
 
     if not is_core:
         webpage_obj["breadcrumb"] = {
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://alamyasas.vercel.app/"},
-                {"@type": "ListItem", "position": 2, "name": "مناطق الخدمة", "item": "https://alamyasas.vercel.app/areas.html"},
+                {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://www.alamytrans.com/"},
+                {"@type": "ListItem", "position": 2, "name": "مناطق الخدمة", "item": "https://www.alamytrans.com/areas.html"},
                 {"@type": "ListItem", "position": 3, "name": area_name, "item": page_url}
             ]
         }
@@ -299,7 +299,7 @@ def update_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    canonical_url = f"https://alamyasas.vercel.app/{filename if filename != 'index.html' else ''}"
+    canonical_url = f"https://www.alamytrans.com/{filename if filename != 'index.html' else ''}"
 
     if is_core:
         info = CORE_PAGES[filename]
